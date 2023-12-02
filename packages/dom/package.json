@@ -1,0 +1,30 @@
+{
+  "name": "@corkcah/dom",
+  "version": "0.1.1",
+  "description": "get plugin like what you're doing with DOM",
+  "main": "lib/index.cjs",
+  "module": "lib/index.mjs",
+  "typings": "lib/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyanChanges/corkcah.git",
+    "directory": "packages/dom"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.3.10",
+    "chai-as-promised": "^7.1.1",
+    "chai-shape": "^1.0.0",
+    "jest-mock": "^29.7.0"
+  },
+  "dependencies": {
+    "@corkcah/core": "^1.0.0",
+    "cordis": "^3.3.1",
+    "cosmokit": "^1.5.1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "@corkcah/core",
+  "description": "Core utils of cordis v3 hacks & utils",
+  "version": "1.0.0",
+  "main": "lib/index.cjs",
+  "module": "lib/index.mjs",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyanChanges/corkcah.git",
+    "directory": "packages/core"
+  },
+  "scripts": {
+    "test": "mocha -r esbuild-register tests/*.spec.ts",
+    "compile:cjs": "esbuild src/index.ts --outfile=lib/index.cjs --bundle --sourcemap --sources-content=false --platform=node --external:cosmokit --target=es2022",
+    "compile:esm": "esbuild src/index.ts --outfile=lib/index.mjs --bundle --sourcemap --sources-content=false --platform=neutral --external:cosmokit --target=es2022",
+    "build": "yarn compile:cjs && yarn compile:esm && yarn dtsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "cordis": "^3.3.1",
+    "cosmokit": "^1.5.1"
+  }
+}

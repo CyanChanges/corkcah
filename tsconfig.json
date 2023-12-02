@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "corkcah-*": [
+        "packages/*/src"
+      ],
+      "@corkcah/*": [
+        "packages/*/src"
+      ],
+      "*": [
+        "packages/*/src"
+      ]
+    }
+  },
+  "files": []
+}

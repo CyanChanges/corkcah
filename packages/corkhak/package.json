@@ -1,0 +1,21 @@
+{
+  "name": "corkcah",
+  "version": "0.1.0",
+  "description": "cordis v3 hacks & utils",
+  "main": "lib/index.cjs",
+  "module": "lib/index.mjs",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyanChanges/corkcah.git",
+    "directory": "packages/corkhak"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "dependencies": {
+    "@corkcah/core": "^1.0.0",
+    "cordis": "^3.3.1"
+  }
+}
